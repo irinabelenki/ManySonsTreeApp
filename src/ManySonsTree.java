@@ -79,13 +79,9 @@ public class ManySonsTree<E extends Comparable<E>> {
 		}
 		System.out.print(node.getData() + "; ");
 		NodeP<E> curr = node.getChild();
-		if (curr == null) {
-			return;
-		}
 		while (curr != null) {
 			printInOrderRec(curr);
 			curr = curr.getBrother();
 		}
 	}
-
 }
